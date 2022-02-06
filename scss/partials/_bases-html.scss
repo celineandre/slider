@@ -1,0 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+
+  // Largeur de la boite réel
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  background-color: #EEEEEE;
+}
