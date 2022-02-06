@@ -2,6 +2,8 @@
 
 Le but est d'obtenir un slider en HTML, CSS et JavaScript sans dépendance JS.
 
+Démo : <https://celineandre.github.io/slider/public/>
+
 ## SASS
 
 ### Installer les dépendances NPM
