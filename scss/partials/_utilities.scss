@@ -1,0 +1,25 @@
+// Utilitaires
+
+// Afficher un élément
+.show {
+  display: block;
+}
+
+// Cacher un élément
+.hide {
+  display: none;
+}
+
+// Effet fondu
+.fade {
+  animation: fame 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
