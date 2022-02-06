@@ -1,0 +1,21 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "description": "Création d'un slider HTML, CSS et JS",
+  "scripts": {
+    "watch": "sass --watch --embed-source-map --source-map-urls=relative --style=expanded scss/style.scss:public/css/style.css",
+    "build": "sass --no-source-map --style=compressed scss/style.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celineandre/slider-js.git"
+  },
+  "keywords": [
+    "slides"
+  ],
+  "author": "Céline André",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
+}

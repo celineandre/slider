@@ -1,0 +1,10 @@
+# Ignorer les fichiers Windows
+*.ini
+Thumbs.db
+
+# Ignorer les fichiers temporaires
+**/temp/*
+
+# Ignorer les dépendances
+package-lock.json
+node_modules/
