@@ -37,30 +37,78 @@ $slide-h: 300px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 1;
+
+    @media screen and (max-width:480px) {
+      padding: 10px 50px
+    }
   }
 
-  // Navigation du slider
+  // Navigation du slider (Left & Right)
   &__nav {
     position: absolute;
     top: calc(50% - 20px);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    padding: 5px 5px 4px 5px;
+    transition: 0.4s ease;
+    z-index: 2;
 
     svg {
       cursor: pointer;
       width: 40px;
       fill: #ffffff;
-      transition: 0.4s ease;
 
-      &:hover {
-        fill: rgba(255, 255, 255, 0.6);
+      @media screen and (max-width:480px) {
+        width: 30px;
+      }
+    }
+
+    &:focus,
+    &:hover {
+      background-color: rgba(0, 0, 0, 1);
+
+      svg {
+        fill: #00AD9F;
       }
     }
 
     &--prev {
-      left: 15px;
+      // left: 15px;
+      left: 0;
     }
 
     &--next {
-      right: 15px;
+      // right: 15px;
+      right: 0;
+    }
+  }
+
+  // Navigation puces (dots/bullets)
+  &__dot {
+    &s {
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 0 2px;
+    border: none;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+
+    &:focus,
+    &:hover {
+      background-color: #003c64;
+    }
+
+    &--active:focus,
+    &--active:hover,
+    &--active {
+      background-color: #017dcf;
     }
   }
 }
